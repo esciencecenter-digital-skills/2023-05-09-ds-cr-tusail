@@ -408,7 +408,7 @@ of code below the Schedule `<h2>` header below with
 
 {% if info.carpentry == "ds" %}
 <h2 id="syllabus">Syllabus</h2>
-{% remote_include {{lesson_meta}}/syllabus-gitlab.md %}
+{% remote_include {{lesson_meta}}/syllabus.md %}
 {% endif %}
 
 <h2 id="schedule">Schedule</h2>
@@ -420,7 +420,7 @@ of code below the Schedule `<h2>` header below with
 {% elsif info.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif info.carpentry == "ds" %}
-{% remote_include {{lesson_meta}}/schedule-gitlab.md %}
+{% remote_include {{lesson_meta}}/schedule.md %}
 {% elsif info.carpentry == "pilot" %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. If you would like to know the timing of these breaks in advance, please [contact the workshop organisers](#contact). For a list of lesson sections and estimated timings, [visit the lesson homepage]({{ site.lesson_site }}).
 {% comment %}
@@ -483,7 +483,7 @@ during the workshop.
 {% include lc/setup.html %}
 {% elsif info.carpentry == "ds" %}
 {% capture content %}
-{% remote_include {{lesson_meta}}/setup-gitlab.md %}
+{% remote_include {{lesson_meta}}/setup.md %}
 {% endcapture %}
 {% if content contains "/setup.md" %}
   {% capture setup %}
