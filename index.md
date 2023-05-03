@@ -43,11 +43,6 @@ For a workshop please delete the following block until the next dashed-line
 {% assign info = site.data.data[0] %}
 
 {% comment %}
-  Assign value in eventbrite file as eventbrite to access the code
-{% endcomment %}
-{% assign eventbrite = site.data.eventbrite %}
-
-{% comment %}
 <div class="alert alert-danger">
 This is the workshop template. Delete these lines and use it to
 <a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
